@@ -14,13 +14,13 @@
     <label for="input">How many movies do you want to watch?</label>
     <input type="number" id="input"> <br>
 
-    <label><input type="checkbox" id="add_disney">Disney Plus</label><br>
-    <label><input type="checkbox" id="add_netflix">Netflix</label><br>
-    <label><input type="checkbox" id="add_amazon">Amazon Prime</label><br>
-    <label><input type="checkbox" id="add_HBO">HBO Max</label>
+    <label><input type="checkbox" id="add_disney" value=1>Disney Plus</label><br>
+    <label><input type="checkbox" id="add_netflix" value=2>Netflix</label><br>
+    <label><input type="checkbox" id="add_amazon" value=3>Amazon Prime</label><br>
+    <label><input type="checkbox" id="add_HBO" value=4>HBO Max</label>
 
     <h2>Ticket cinema price is $3</h2>
-    <button type="submit" onclick="show_prices">Show me Difference!</button>
+    <button type="submit" onclick="show_prices()">Show me Difference!</button>
     <p id="streaming_price"></p>
     <p id="cinema_price"></p>
     <p id="show_difference"></p>
