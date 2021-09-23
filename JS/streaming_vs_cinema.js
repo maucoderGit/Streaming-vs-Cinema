@@ -1,6 +1,6 @@
 function how_many_select(){
-    const input = document.getElementById("input")
-    return input.value
+    const input = document.getElementById("price")
+    input = parseInt(input.value)
 }
 
 const cinema_value = 3
@@ -24,6 +24,9 @@ const platforms = [
 ]
 
 function show_prices(platforms){
-    const cinema_value = how_many_select()
-    
+    const cinema = how_many_select()
+    const total_cinema = cinema_value * cinema
+
+    const cinema_print = document.getElementById("streaming_price")
+    cinema_value.innerHTML()
 }
