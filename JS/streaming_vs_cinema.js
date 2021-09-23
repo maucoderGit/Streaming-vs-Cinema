@@ -1,6 +1,8 @@
 function how_many_select(){
     const input = document.getElementById("price")
-    input = parseInt(input.value)
+    const input_value = parseInt(input.value)
+    
+    return input_value
 }
 
 const cinema_value = 3
