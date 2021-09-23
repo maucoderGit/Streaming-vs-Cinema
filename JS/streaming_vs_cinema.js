@@ -3,6 +3,7 @@ function how_many_select(){
     return input.value
 }
 
+const cinema_value = 3
 const platforms = [
     id_0 = { 
     name: "Disney", 
@@ -24,4 +25,5 @@ const platforms = [
 
 function show_prices(platforms){
     const cinema_value = how_many_select()
+    
 }
