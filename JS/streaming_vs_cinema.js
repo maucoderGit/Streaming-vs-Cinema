@@ -1,11 +1,3 @@
-function how_many_select(){
-    const input = document.getElementById("price")
-    const input_value = parseInt(input.value)
-    
-    return input_value
-}
-
-const cinema_value = 3
 const platforms = [
     id_0 = { 
     name: "Disney", 
@@ -25,10 +17,37 @@ const platforms = [
     }
 ]
 
-function show_prices(platforms){
+function how_many_select(){
+    const input = document.getElementById("price")
+    const input_value = parseInt(input.value)
+    
+    return input_value
+}
+
+function stream_platforms_values() {
+    let sum_values = 0
+    if(document.getElementById("add_0").checked){
+        sum_values += platforms[0].price
+    }
+    if(document.getElementById("add_1").checked){
+        sum_values += platforms[1].price
+    }
+    if(document.getElementById("add_2").checked){
+        sum_values += platforms[2].price
+    }
+    if(document.getElementById("add_3").checked){
+        sum_values += platforms[3].price
+    }
+
+    return sum_values
+}
+
+const cinema_value = document.getElementById("price").value
+
+function show_prices(){
     const cinema = how_many_select()
     const total_cinema = cinema_value * cinema
-
-    const cinema_print = document.getElementById("streaming_price")
-    cinema_value.innerHTML()
+    
+    
+    console.log(stream_platforms_values())
 }
