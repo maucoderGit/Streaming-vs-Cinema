@@ -1,3 +1,5 @@
+// platforms list
+
 const platforms = [
     id_0 = { 
     name: "Disney", 
@@ -17,6 +19,8 @@ const platforms = [
     }
 ]
 
+// getting inputs of users
+
 const cinema_value = document.getElementById("input_movies").value
 
 const how_many_select = () => {
@@ -25,6 +29,8 @@ const how_many_select = () => {
 
     return input_value
 }
+
+// sum streaming prices
 
 function stream_platforms_values() {
     let sum_values = 0
@@ -38,7 +44,7 @@ function stream_platforms_values() {
     return sum_values
 }
 
-stream_platforms_values()
+// print in html 
 
 function show_prices(){
     const cinema = how_many_select()
