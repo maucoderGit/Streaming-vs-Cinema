@@ -26,28 +26,34 @@ function how_many_select(){
 
 function stream_platforms_values() {
     let sum_values = 0
-    if(document.getElementById("add_0").checked){
-        sum_values += platforms[0].price
+
+    for(let i = 0; i < platforms.length; i++){
+        if(document.getElementById(`add_${i}`).checked){
+            sum_values += platforms[i].price
+        }
     }
-    if(document.getElementById("add_1").checked){
-        sum_values += platforms[1].price
-    }
-    if(document.getElementById("add_2").checked){
-        sum_values += platforms[2].price
-    }
-    if(document.getElementById("add_3").checked){
-        sum_values += platforms[3].price
-    }
+    // if(document.getElementById("add_0").checked){
+    //     sum_values += platforms[0].price
+    // }
+    // if(document.getElementById("add_1").checked){
+    //     sum_values += platforms[1].price
+    // }
+    // if(document.getElementById("add_2").checked){
+    //     sum_values += platforms[2].price
+    // }
+    // if(document.getElementById("add_3").checked){
+    //     sum_values += platforms[3].price
+    // }
 
     return sum_values
 }
 
+stream_platforms_values()
 const cinema_value = document.getElementById("price").value
 
 function show_prices(){
     const cinema = how_many_select()
     const total_cinema = cinema_value * cinema
-    
     
     console.log(stream_platforms_values())
 }
