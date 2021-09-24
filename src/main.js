@@ -18,12 +18,9 @@ const platforms = [
 ]
 
 const cinema_value = document.getElementById("price").value
-
-function how_many_select(){
+const how_many_select = () => {
     const input = document.getElementById("price")
     const input_value = parseInt(input.value)
-    
-    return input_value
 }
 
 function stream_platforms_values() {
