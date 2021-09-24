@@ -17,7 +17,8 @@ const platforms = [
     }
 ]
 
-const cinema_value = document.getElementById("price").value
+const cinema_value = document.getElementById("input_movies").value
+
 const how_many_select = () => {
     const input = document.getElementById("price")
     const input_value = parseInt(input.value)
@@ -43,5 +44,7 @@ function show_prices(){
     const cinema = how_many_select()
     const total_cinema = cinema_value * cinema
     
+    console.log(`el cine cuesta ${cinema_value}`)
+    console.log(`vas a ver ${cinema} peliculas`)
     console.log(stream_platforms_values())
 }
