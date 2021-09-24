@@ -17,6 +17,8 @@ const platforms = [
     }
 ]
 
+const cinema_value = document.getElementById("price").value
+
 function how_many_select(){
     const input = document.getElementById("price")
     const input_value = parseInt(input.value)
@@ -32,24 +34,11 @@ function stream_platforms_values() {
             sum_values += platforms[i].price
         }
     }
-    // if(document.getElementById("add_0").checked){
-    //     sum_values += platforms[0].price
-    // }
-    // if(document.getElementById("add_1").checked){
-    //     sum_values += platforms[1].price
-    // }
-    // if(document.getElementById("add_2").checked){
-    //     sum_values += platforms[2].price
-    // }
-    // if(document.getElementById("add_3").checked){
-    //     sum_values += platforms[3].price
-    // }
 
     return sum_values
 }
 
 stream_platforms_values()
-const cinema_value = document.getElementById("price").value
 
 function show_prices(){
     const cinema = how_many_select()
