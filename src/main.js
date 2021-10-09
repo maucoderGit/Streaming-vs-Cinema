@@ -25,7 +25,7 @@ const cinema_price = document.getElementById("cinema_price")
 const streaming_price = document.getElementById("streaming_price")
 const show_difference = document.getElementById("show_difference")
 
-const cinema_value = document.getElementById("input_movies").value
+const cinema_value = () => document.getElementById("input_movies").value
 
 const how_many_select = () => {
     const input = document.getElementById("price")
@@ -52,7 +52,7 @@ function stream_platforms_values() {
 
 function show_prices(){
     const cinema = how_many_select()
-    const total_cinema = cinema_value * cinema
+    const total_cinema = cinema_value() * cinema
     const stream = stream_platforms_values()
 
     streaming_price.innerText = `Gastas en peliculas ${total_cinema || 0}`
