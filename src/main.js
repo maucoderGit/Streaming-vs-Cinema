@@ -1,5 +1,3 @@
-// platforms list
-
 const platforms = [
     id_0 = { 
     name: "Disney", 
